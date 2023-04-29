@@ -190,3 +190,52 @@ div#slideshow {
 				margin-left: calc(-300px * 3);
 			}
 		}
+
+@media (min-width: 768px) {
+		div#slideshow {
+			width: 800px;
+		}
+
+		div.slide-wrapper {
+			width: calc(800px * 5);
+			animation: slide 25s ease infinite;
+		}
+
+		div.slide {
+			float: left;
+			height: 500px;
+			width: 800px;
+		}
+
+		@keyframes slide {
+			20% {
+				margin-left: 0px;
+			}
+			40% {
+				margin-left: calc(-800px *1);
+			}
+			50% {
+				margin-left: calc(-800px *1);
+			}
+			60% {
+				margin-left: calc(-800px * 2);
+			}
+			80% {
+				margin-left: calc(-800px * 2);
+			}
+			90% {
+				margin-left: calc(-800px * 3);
+			}
+			100% {
+				margin-left: calc(-800px * 3);
+			}
+	
+	}
+
+	div#gallery {
+	column-count: 3;
+	column-gap: 10px;
+	margin-top: 10px;
+
+}
+}
