@@ -25,7 +25,9 @@ main {
 
 div[id^='btn'] {
 	flex-basis: 10%;
-	width: 100px;
+	width: 200px;
+	height: 60px;
+	font-size: 26px;
 	margin: 25px;
 	display: flex;
 	align-items: center;
@@ -36,17 +38,13 @@ div[id^='btn'] {
 div#btn1 {
 	background-color: purple;
 	color: pink;
-	width: 200px;
-	height: 60px;
-	font-size: 26px;
+	
 }
 
 div#btn2 {
 	background-color: midnightblue;
 	color: lightblue;
-	width: 200px;
-	height: 60px;
-	font-size: 26px;
+	
 
 }
 a {
