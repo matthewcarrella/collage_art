@@ -53,6 +53,9 @@ a {
 
 header {
 	display: flex;
+	background-image: url("images/banner.jpg");
+	background-size: cover;
+	margin-bottom: 5px;
 }
 
 div.info-container {
@@ -111,6 +114,7 @@ div#gallery {
 	column-count: 2;
 	column-gap: 10px;
 	margin-top: 10px;
+	background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 
 }
 
