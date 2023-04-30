@@ -1,2 +1,2 @@
 # collage_art
-a sample website for an artist who works in collage
+a website for an artist who makes collages
