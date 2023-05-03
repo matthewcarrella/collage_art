@@ -1,131 +1,104 @@
-
-h1, h2, p {
-       font-family: 'Permanent Marker', sans-serif;
-       color: indianred;
-
+* {
+	margin: 0;
+	padding: 0;
 }
-
-dd {
-	font-family: 'Special Elite', cursive;
-	font-size: 18px;
-	color:black;
-}
-
-body {
+header {
 	display: flex;
-	flex-direction: column;
-	height: 100vh;
 	align-items: center;
+	max-width: 700px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	height: 15vh;
+	background-color: grey;
+	background-image: url("images/banner.jpg");
+	background-size: cover;
 }
 
-
-main {
-	flex-basis: 50%;
-}
 
 div[id^='btn'] {
-	flex-basis: 10%;
-	width: 200px;
-	height: 60px;
-	font-size: 26px;
-	margin: 25px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	border-radius: 15px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 div#btn1 {
 	background-color: purple;
 	color: pink;
-	
+	margin-left: -20px;
 }
 
 div#btn2 {
 	background-color: midnightblue;
 	color: lightblue;
-	
-
-}
-a {
-	text-decoration: none;
-}
-
-header {
-	display: flex;
-	background-image: url("images/banner.jpg");
-	background-size: cover;
-	margin-bottom: 5px;
+	margin-right: -40px;
 }
 
 div.info-container {
-	display: flex;
-	background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-}
 
-
-
-
-div.info-container {
+	background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);;
+	height: 35vh;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
 	border-radius: 15px;
-
+	position: relative;
+	border: 3px purple double;
+	box-shadow: purple 3px 5px;
 }
 
-div.titleRow {
-	display: flex;
+div.bio-container {
+
+	background: linear-gradient(to top right, #EF8D9C 40%, #FFC39E 100%);;
+	height: 35vh;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	border-radius: 15px;
+	position: relative;
+	border: 3px purple double;
+	box-shadow: purple 3px 5px;
+	padding: 15px;
 }
 
-div.titleRow > p {
-	margin-left: 100px;
-}
 
-figure img {
-	width: 100px;
-	flex-basis: 30%;
+div.info-container > img {
+	display: block;
+	width: 125px;
 	border-radius: 15px;
 }
 
-
-dl {
-    display: flex;
-    flex-flow: row wrap;
-    border: solid #333;
-    border-width: 1px 1px 0 0;
-    border-radius: 15px;
-  }
-  dt {
-    flex-basis: 20%;
-    padding: 2px 4px;
-    background: #333;
-    text-align: right;
-    border-radius: 15px;
-    color: #fff;
-  }
-  dd {
-    flex-basis: 70%;
-    flex-grow: 1;
-    margin: 0;
-    padding: 2px 4px;
-    border-bottom: 1px solid #333;
-  }
-
+div.info-container > table {
+	position: absolute;
+	top: 130px;
+	left: 10px;
+}
 
 div#gallery {
 	column-count: 2;
 	column-gap: 10px;
 	margin-top: 10px;
-	background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+	
 
 }
 
 div.item {
-	margin-bottom: 15px;
+	margin: 15px;
 
 }
 
 img {
 	display: block;
 	width: 100%;
+	border-radius: 15px;
+	border: 3px purple double;
+	box-shadow: purple 3px 5px;
 }
 
 #fullpage {
@@ -143,6 +116,10 @@ img {
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   background-color: black;
+}
+
+a {
+	text-decoration: none;
 }
 
 div#slideshow {
@@ -165,7 +142,8 @@ div#slideshow {
 			width: 300px;
 		}
 
-		img {
+.slide > img {
+		
 			display: block;
 			height: 100%;
 			width: 100%;
@@ -196,51 +174,6 @@ div#slideshow {
 			}
 		}
 
-@media (min-width: 768px) {
-		div#slideshow {
-			width: 800px;
-		}
-
-		div.slide-wrapper {
-			width: calc(800px * 5);
-			animation: slide 25s ease infinite;
-		}
-
-		div.slide {
-			float: left;
-			height: 500px;
-			width: 800px;
-		}
-
-		@keyframes slide {
-			20% {
-				margin-left: 0px;
-			}
-			40% {
-				margin-left: calc(-800px *1);
-			}
-			50% {
-				margin-left: calc(-800px *1);
-			}
-			60% {
-				margin-left: calc(-800px * 2);
-			}
-			80% {
-				margin-left: calc(-800px * 2);
-			}
-			90% {
-				margin-left: calc(-800px * 3);
-			}
-			100% {
-				margin-left: calc(-800px * 3);
-			}
-	
-	}
-
-	div#gallery {
-	column-count: 3;
-	column-gap: 10px;
-	margin-top: 10px;
-
-}
+table, th, td {
+	border: 1px solid black;
 }
