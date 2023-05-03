@@ -19,11 +19,13 @@ header {
 
 div[id^='btn'] {
 	border-radius: 15px;
-	width: 150px;
+	width: 170px;
 	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Permanent Marker', sans-serif;
+	font-size: 26px;
 }
 
 div#btn1 {
