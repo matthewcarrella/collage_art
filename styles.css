@@ -177,3 +177,10 @@ div#slideshow {
 table, th, td {
 	border: 1px solid black;
 }
+
+
+@media (min-width: 768px) {
+	div#gallery {
+		column-count: 3;
+	}
+}
